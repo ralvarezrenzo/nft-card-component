@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    /* primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* neutral */
+    /* (main BG) */
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    /* (card BG) */
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    /* (line) */
+    --very-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue-main);
+}
+.cardNft{
+    width: 80%;
+    max-width: 350px;
+    background-color: var(--very-dark-blue-card);
+    padding: 1.5rem 2rem 1.9rem;
+    border-radius: 1.5rem;
+}
+.cardNft__img{
+    width: 100%;
+    line-height: 0;
+}
+.cardNft__img img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+.cardNft__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cardNft__heading{
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.cardNft__text{
+    color: var(--soft-blue);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.cardNft__prices{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 1rem;
+}
+.info{
+    display:flex;
+}
+.info svg{
+    margin-right: .5rem;
+}
+.cardNft__price{
+    color: var(--cyan);
+    font-weight: bold;
+}
+.cardNft__day{
+    color: var(--soft-blue);
+}
+.cardNft__creator{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: red; */
+    padding-top: 1.5rem;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+.cardNft__creator img{
+    width: 50px;
+    margin-right: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.cardNft__creator p{
+    color: var(--soft-blue);
+}
+.cardNft__creator p span{
+    color: var(--white);
+}
+footer{
+    background-color: var(--very-dark-blue-main);
+    color: var(--white);
+    padding: 1rem;
+}
